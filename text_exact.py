@@ -19,10 +19,10 @@ def text_extract(fd = r'C:\Users\Administrator\Desktop\1.jpg'):
     adj_list = [wt[0] for (wt, _) in word_list if wt[1] == 'ADJ']
     adv_list = [wt[0] for (wt, _) in word_list if wt[1] == 'ADV']
     
-    verbs = [word for word in tags if (word in verb_list)]
-    nouns = [word for word in tags if (word in noun_list)]
-    adjs = [word for word in tags if (word in adj_list)] + emo
-    advs = [word for word in tags if (word in adv_list)]
+    verbs = '\n'.join([word for word in tags if (word in verb_list)])
+    nouns = '\n'.join([word for word in tags if (word in noun_list)])
+    adjs = '\n'.join([word for word in tags if (word in adj_list)] + emo)
+    advs = '\n'.join([word for word in tags if (word in adv_list)])
 
     return verbs, nouns, adjs, advs
 
