@@ -3,8 +3,8 @@ import proc_emotion as pe
 import pprint as pp
 import nltk
 
-def text_extract():
-    fd = r'C:\Users\Administrator\Desktop\1.jpg'
+def text_extract(fd = r'C:\Users\Administrator\Desktop\1.jpg'):
+    
     result_1 = pv.read_file(fd)
     result_2 = pe.read_file(fd)
     tags = result_1['description']['tags']
