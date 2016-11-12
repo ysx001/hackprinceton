@@ -1,12 +1,12 @@
 import proc_vision as pv
 import proc_emotion as pe
-import pprint as pp
 import nltk
 
-def text_extract(fd = r'C:\Users\Administrator\Desktop\1.jpg'):
-    
+def text_extract(fd = r'C:\Users\Administrator\Desktop\2.jpg'):
     result_1 = pv.read_file(fd)
     result_2 = pe.read_file(fd)
+    print result_2
+    print result_1
     tags = result_1['description']['tags']
     emo = result_2[0]['scores'].keys()
     emo = emo[0:2]
@@ -25,6 +25,11 @@ def text_extract(fd = r'C:\Users\Administrator\Desktop\1.jpg'):
     advs = '\n'.join([word for word in tags if (word in adv_list)])
 
     return verbs, nouns, adjs, advs
+
+def main():
+    print text_extract()
+
+main()
 
 ##verbs, nouns, adjs, advs = text_extract()
 ##print(verbs)

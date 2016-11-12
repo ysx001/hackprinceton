@@ -14,7 +14,7 @@ def index(request):
         if form.is_valid():
             newdoc = Document(docfile=request.FILES['docfile'])
             # Redirect to the document list after POST
-            return render_to_response("'resource/get_back.html'")
+            return render_to_response("'get_back.html'")
     else:
         form = DocumentForm()  # A empty, unbound form
 
@@ -23,7 +23,7 @@ def index(request):
     # Render list page with the documents and the form
     return render(
         request,
-        'resource/upload_home.html',
+        'upload_home.html',
         {'form': form}
     )
 
