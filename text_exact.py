@@ -26,5 +26,5 @@ def text_extract():
 
     return verbs, nouns, adjs, advs
 
-verbs, nouns, adjs, advs = text_extract()
-print(verbs)
+##verbs, nouns, adjs, advs = text_extract()
+##print(verbs)
