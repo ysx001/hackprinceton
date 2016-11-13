@@ -839,6 +839,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="wth" />
     <option name="LAST_COMMIT_MESSAGE" value="wth" />
   </component>
