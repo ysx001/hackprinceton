@@ -9,6 +9,9 @@
     <meta name="author" content="">
     <title>Grayscale - Start Bootstrap Theme</title>
 
+    <script src="./responsivevoice.js"></script>
+    <script src="./voice_request.js"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     
@@ -16,6 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
     <!-- Theme CSS -->
     <link href="https://cdn.bootcss.com/startbootstrap-grayscale/3.3.7+1/css/grayscale.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -67,21 +71,12 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <img src="img/deep-img.jpg" alt="Mountain View" style="width:550px;height:auto;">
-                        {% if documents%}
-                          <br/>
-                          <p class="intro-text">
-                                {% for document in documents %}
-                                    <br />  {{ document }}
-                                {% endfor %}
-                          </p>
-                        {% else %}
-                            <p>No documents.</p>
-                        {% endif %}
-{##}
-{#                        <p class="intro-text">Where is the old girl?#}
-{#                            <br /> The truck shops like a fast hood.#}
-{#                            <br /> Grow roughly like a big truck.#}
-{#                            <br /> The faceless slum calmly shoves the corner.</p>#}
+                        <br/>
+                        <p name = "poem" class="intro-text">Where is the old girl?
+                            <br /> The truck shops like a fast hood.
+                            <br /> Grow roughly like a big truck.
+                            <br /> The faceless slum calmly shoves the corner.</p>
+                        <a onclick="speak()" href="#" class="btn btn-default btn-lg">Play</a>
                         <!--<form action="demo_form.asp"><p align="center">-->
                         <!--<input type="file" name="pic" accept="image/*"></p>-->
                         <!--</form>-->
