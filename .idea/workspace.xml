@@ -4,15 +4,18 @@
     <list default="true" id="776a955f-7f95-4912-94d5-223e383d9f65" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/db.sqlite3" afterPath="$PROJECT_DIR$/myproject/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/Procfile" afterPath="$PROJECT_DIR$/myproject/Procfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/myapp/templates/index.html" afterPath="$PROJECT_DIR$/myproject/myproject/myapp/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/myapp/templates/text.html" afterPath="$PROJECT_DIR$/myproject/myproject/myapp/templates/text.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/myapp/text_exact.py" afterPath="$PROJECT_DIR$/myproject/myproject/myapp/text_exact.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/myapp/views.py" afterPath="$PROJECT_DIR$/myproject/myproject/myapp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/urls.py" afterPath="$PROJECT_DIR$/myproject/myproject/urls.py" />
     </list>
     <list id="a9658c38-fcfc-4d50-b875-982010bb1f0d" name="Failed commit: Default" comment="wth" />
+    <list id="673a7484-aaf0-4c22-b24c-7a5345be817c" name="Failed commit: Default (2)" comment="wth">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/myapp/templates/text.html" afterPath="$PROJECT_DIR$/myproject/myproject/myapp/templates/text.html" />
+    </list>
+    <list id="f667509b-e16c-4b11-b800-7c836d3f4143" name="Failed commit: Failed commit: Default (2)" comment="wth">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject/myproject/myapp/templates/index.html" afterPath="$PROJECT_DIR$/myproject/myproject/myapp/templates/index.html" />
+    </list>
     <ignored path="hackprinceton.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -100,14 +103,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="text.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="text.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/myproject/myproject/myapp/templates/text.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="382">
-                  <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+                <state relative-caret-position="602">
+                  <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="git.ignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/git.ignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -120,16 +133,6 @@
                   <folding>
                     <element signature="e#24#56#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/myproject/myproject/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -771,7 +774,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479025084662</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="wth">
+      <created>1479028841618</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1479028841618</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,13 +790,13 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10566667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965118" sideWeight="0.5013961" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33775216" sideWeight="0.502" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910663" sideWeight="0.4986039" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33775216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33775216" sideWeight="0.498" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -914,14 +924,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git.ignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1117,11 +1119,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myproject/myproject/myapp/templates/text.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        <state relative-caret-position="602">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git.ignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
