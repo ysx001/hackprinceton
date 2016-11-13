@@ -1,7 +1,9 @@
 import proc_vision as pv
 import proc_emotion as pe
-import nltk
+from nltk import FreqDist
+from nltk import corpus
 import random
+import datetime
 
 def text_extract(fd):
     try:
@@ -12,9 +14,8 @@ def text_extract(fd):
         if len(result_2) > 0:
             emo = result_2[0]['scores'].keys()
             emo = emo[0:2]
-
-        wsj = nltk.corpus.treebank.tagged_words(tagset='universal')
-        word_tag_fd = nltk.FreqDist(wsj)
+        wsj = corpus.treebank.tagged_words(tagset='universal')
+        word_tag_fd = FreqDist(wsj)
         word_list = word_tag_fd.most_common()
         verb_list = [wt[0] for (wt, _) in word_list if wt[1] == 'VERB']
         adv_list = [wt[0] for (wt, _) in word_list if wt[1] == 'ADV']
@@ -65,13 +66,11 @@ def text_extract(fd):
 
         # Join the poem
         p = []
-
         poem = ([' '.join(i) for i in poem])
         return poem
     except:
         poem = ["Failure, darkness, and darkness.\n","Hate, failure, and darkness.\n","Lord, hate!\n","Darkness, darkness, and hate.\n"]
         return poem
-
 
 def count_all_lines():
     for i in range(len(nwords)):

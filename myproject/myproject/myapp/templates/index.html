@@ -9,9 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script src="onsubmit.js"></script>
+    <script src="http://yourjavascript.com/31139613011/onsubmit.js"></script>
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <title>GIIC</title>
     {% load static from staticfiles %}
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +44,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> Poetic and <span class="light">Intelligent</span> Image Caption
+{#                    <i class="fa fa-play-circle"></i> Poetic and <span class="light">Intelligent</span> Image Caption#}
                 </a>
             </div>
 
@@ -69,33 +70,32 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-success">Poetic and Intelligent Image Caption</h1>
-                        <p class="intro-text">Insert your image here</p>
-<<<<<<< HEAD
                         <p name= "loading-text" class="intro-text"></p>
+
+
+
                         <!--{% load widget_tweaks %}-->
-                    <form action="{% url "list" %}" method="post" enctype="multipart/form-data">
-            <!--{% csrf_token %}{% load widget_tweaks %}-->
-            <a>
-                {{ form.docfile |attr:"class:btn btn-default btn-file"}}
-            </a>
-=======
-                        {% load widget_tweaks %}
+                            <div id="image-holder"  ></div>
                         <form action="{% url "list" %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}{% load widget_tweaks %}
+
+                            <div>
+
+</div>
             <a> <center> &nbsp;&nbsp;&nbsp;
-                {{ form.docfile |attr:"class:btn btn-default btn-lg btn-file"}}
-            </center> </a>
+                {{ form.docfile|attr:"id:fileUpload"|attr:"class:btn btn-default btn-lg btn-file"}}
+            </center>
+              <a id="browse"  class="btn btn-default btn-lg">Browse your image</a>
+   </a>
             <br></br>
->>>>>>> 9526f091055596114c617058879d4ce522b3670b
 
             <p><input name="upload-button" type="submit" onclick="onSubmit()" class="btn btn-default btn-lg" value="Upload"/></p>
-                    </div>
+</div>
                 </div>
             </div>
         </div>
     </header>
 
-    
 
     <!-- jQuery -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
@@ -111,7 +111,48 @@
 
     <!-- Theme JavaScript -->
     <script src="https://cdn.bootcss.com/startbootstrap-grayscale/3.3.7+1/js/grayscale.min.js"></script>
+<script>
+$(document).ready(function() {
+        $("#fileUpload").on('change', function() {
+          //Get count of selected files
+          var countFiles = $(this)[0].files.length;
+          var imgPath = $(this)[0].value;
+          var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+          var image_holder = $("#image-holder");
+          image_holder.empty();
+          if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+            if (typeof(FileReader) != "undefined") {
+              //loop for each file selected for uploaded.
+              for (var i = 0; i < countFiles; i++)
+              {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                  $("<img />", {
+                    "src": e.target.result,
+                    "class": "thumb-image",
+                      "width":"550px",
+                      "height":"auto",
 
+                  }).appendTo(image_holder);
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[i]);
+              }
+            } else {
+              alert("This browser does not support FileReader.");
+            }
+          } else {
+            alert("Pls select only images");
+          }
+        });
+      });
+</script>
+<script>
+    document.getElementById("fileUpload").style.display="none";
+    $('#browse').click(function(){
+    $(this).parent().find("#fileUpload").click();
+});s
+</script>
 </body>
 
 </html>
