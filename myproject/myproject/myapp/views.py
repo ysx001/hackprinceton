@@ -22,7 +22,7 @@ def list(request):
             t= text_extract(filepath)
             return render(
                 request,
-                'list.html',
+                'text.html',
                 {'documents':t,'form': form}
             )
     else:
