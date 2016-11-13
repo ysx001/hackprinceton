@@ -1,9 +1,0 @@
-import proc_vision
-import proc_emotion
-import pprint as pp
-
-def text_proc_from_file(fd):
-    fd = r'C:\Users\Administrator\Desktop\1.jpg'
-    result_1 = proc_vision.read_file(fd)
-    tags = result['tags']
-    pp.pprint(tags)
